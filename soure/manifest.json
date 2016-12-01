@@ -1,0 +1,25 @@
+﻿{
+	"manifest_version": 2,
+	"name": "花猫比价",
+	"version": "1.0",
+	"web_accessible_resources": ["av-min-1.5.0.js","echarts.common.min.js","content.css"] ,
+	"background": { "scripts": ["jquery-2.0.0.min.js","av-min-1.5.0.js", "background.js"] },
+//	"page_action": {
+//		"default_icon": {
+//			"19": "icon.png",
+//			"38": "icon.png"
+//		},
+//		"default_title": "花猫奶粉实时比价", // shown in tooltip
+//		"default_popup": "popup.html"
+//	},
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "花猫比价", // shown in tooltip
+		"default_popup": "popup.html"
+	},
+	"permissions" : ["tabs","http://www.huamao.com.au/"],
+	"content_scripts":[{
+		"matches":["http://www.huamao.com.au/*"],
+		"js":["jquery-2.0.0.min.js","echarts.common.min.js","av-min-1.5.0.js", "content_script.js"]
+	}]
+}

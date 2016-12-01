@@ -1,0 +1,12 @@
+﻿.price-stat{
+	height: 400px;
+	background-color: transparent;position: absolute;top: 0px;opacity: 1;display: none;cursor: pointer;
+}
+
+#price-stat{
+	margin-left: 5px; margin-top: 15px;border-bottom-left-radius: 5px;border-bottom-right-radius: 0px;box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);border: 1px solid #dfdfdf;
+}
+
+.img-stat{
+	width:16px;height:16px;cursor: pointer;margin-left:10px;
+}
